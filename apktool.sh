@@ -17,10 +17,6 @@ mv classes*-dex2jar.jar  dex2jar_app/
 echo "生成JAR成功"
 filepath=$(cd "$(dirname "$0")"; pwd)
 
-Cur_Dir =$(pwd)
-echo $Cur_Dir
-echo $filepath
-
 
 
 
