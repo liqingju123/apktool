@@ -1,6 +1,8 @@
 #!/bin/bash
 num=$(echo "obase=16;$1"|bc) #16进制转化成10进制
-public_type=`grep -i $num  res/values/public.xml`
+public_path=`find . -type f -name public.xml 2>/dev/null`
+
+public_type=`grep -i $num  $public_path`
 res_name=$(echo $public_type | sed 's/\<public type="\(.*\)" name="\(.*\)" id="\(.*\)" \/>/\1/g') #获取XML 文件名称类型
 res_id=$(echo $public_type | sed 's/\<public type="\(.*\)" name="\(.*\)" id="\(.*\)" \/>/\2/g') #获取资源对应的ID 名称
 res_name_value=s.xml #为拼接xml资源文件库
