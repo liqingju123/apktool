@@ -17,6 +17,10 @@ apktool.sh  doctor_platform.apk
 该文件夹下会生成两个文件夹 一个 dex2jar_app 该目录存储反编译后的 *.Jar
 out_xml 生成反编译以后的XML 文件
 
+find_resource_by_id.sh  2130772067  
+
+根据资源ID 编号查找 资源文件中对应的资源
+
 
 
 
